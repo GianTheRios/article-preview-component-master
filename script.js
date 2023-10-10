@@ -9,4 +9,14 @@ shareBtn.addEventListener('click', () => {
     } else {
         socialList.classList.add('hidden');
     }
+
+    // when shareBtn is clicked, the whole pages background opacity is changed
+    // to make the socialList more visible
+    if (shareBtn === 'clicked') {
+        document.body.style.opacity = '0.5';
+    } else {
+        document.body.style.opacity = '1';
+    }
+
 })
+
